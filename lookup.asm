@@ -5,9 +5,9 @@ jmp start
 ;data
 
 ;code
-start:lxi h,5000h;
+start:lxi h,5000h;[h]=50,[l]=00
 mvi a,04h;
-add l;
+add l;a<=a+l
 mov l,a;
 mov a,m;
 sta 5010h;
